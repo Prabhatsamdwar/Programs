@@ -14,8 +14,8 @@
   ptr->next=prev;
   prev=ptr;
   ptr=nxt;
-}
- 
+ }
+
 (*start)=prev;
 
 }
@@ -36,5 +36,5 @@ void main()
   reverse_list(&start);
 
   printlist(start);
-  
+
 }

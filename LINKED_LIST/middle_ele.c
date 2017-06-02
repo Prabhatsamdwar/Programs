@@ -6,17 +6,15 @@ int middle_ele(struct node *start)
 {
   struct node *slow=start;
   struct node *fast=start;
-  
+
   if(start==NULL)
     return;
-  
+
   while(slow!=NULL && fast!=NULL && fast->next!=NULL)
  {
       slow=slow->next;
       fast=fast->next->next;
-   
 
-}
 
   return slow->data;
 
@@ -36,7 +34,7 @@ create_node(&start,11);
 create_node(&start,9);
 create_node(&start,12);
 
- 
+
 
 
 printlist(start);

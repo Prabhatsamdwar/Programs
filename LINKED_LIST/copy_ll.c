@@ -4,7 +4,7 @@
 
 struct node *copy_ll(struct node *start1)
 {
-   
+
 
 	struct node *ptr;
 	struct node *tail,*head;
@@ -14,11 +14,11 @@ struct node *copy_ll(struct node *start1)
 
 	while(ptr!=NULL){
 		if(head==NULL){
-			head=(struct node*)malloc(sizeof(struct node));	
+			head=(struct node*)malloc(sizeof(struct node));
 			head->data=ptr->data;
 		        tail=head;
 		        tail->next=NULL;
-		}else{ 
+		}else{
 			tail->next=(struct node*)malloc(sizeof(struct node));
 			tail->next->data=ptr->data;
 			tail=tail->next;

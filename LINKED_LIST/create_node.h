@@ -14,7 +14,7 @@ struct node *create_node(struct node **head,int data)
   newnode->data=data;
   newnode->next=(*head);
   (*head)=newnode;
-  
+
 
 }
 

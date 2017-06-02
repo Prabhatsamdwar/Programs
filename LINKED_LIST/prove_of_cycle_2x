@@ -1,0 +1,25 @@
+
+
+Let us suppose the length of the list which does not contain the loop be s, length of the loop be t and the ratio of fast_pointer_speed to slow_pointer_speed be k.
+
+Let the two pointers meet at a distance j from the start of the loop.
+
+So, the distance slow pointer travels = s + j. Distance the fast pointer travels = s + j + m * t. But, the fast pointer would also have traveled a distance k * (s + j) (k times the distance of the slow pointer).
+
+Therefore, we get k * (s + j) = s + j + m * t.
+
+s + j = (m / k-1)t.
+
+Hence, from the above equation, length the slow pointer travels is an integer multiple of the loop length.
+
+For greatest efficiency , (m / k-1) = 1 (the slow pointer shouldn't have traveled the loop more than once.)
+
+therefore , m = k - 1 => k = m + 1
+
+Since m is the no.of times the fast pointer has completed the loop , m >= 1 . For greatest efficiency , m = 1.
+
+therefore k = 2.
+
+if we take a value of k > 2 , more the distance the two pointers would have to travel.
+
+Hope the above explanation helps.
